@@ -27,7 +27,6 @@ COPY licenses /opt/licenses
 
 WORKDIR /opt/android-sdk-linux
 
-chmod 755 config/docker-entrypoint.sh
 RUN /opt/tools/entrypoint.sh built-in
 
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "cmdline-tools;latest"

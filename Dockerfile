@@ -35,4 +35,5 @@ RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platform-tools"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platforms;android-31"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "system-images;android-31;google_apis;x86_64"
 
+RUN [“chmod”, “+x”, "/opt/tools/entrypoint.s”]
 CMD /opt/tools/entrypoint.sh built-in
